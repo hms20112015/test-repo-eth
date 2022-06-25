@@ -1,0 +1,12 @@
+type Gravatar @entity {
+  id: ID!
+<<<<<<< HEAD
+  owner: Bytes
+  displayName: String
+  imageUrl: String
+=======
+  owner: Bytes!
+  displayName: String!
+  imageUrl: String!
+>>>>>>> f64f0d0fcc4ab3db4b29218e8d1faa8aa047d6bc
+}

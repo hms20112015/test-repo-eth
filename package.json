@@ -1,0 +1,42 @@
+{
+<<<<<<< HEAD
+  "name": "hms_subgraph_test",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ hms_subgraph_test",
+    "create-local": "graph create --node http://localhost:8020/ hms_subgraph_test",
+    "remove-local": "graph remove --node http://localhost:8020/ hms_subgraph_test",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 hms_subgraph_test"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.31.0",
+    "@graphprotocol/graph-ts": "0.27.0"
+=======
+  "name": "example",
+  "version": "0.1.0",
+  "repository": "https://github.com/graphprotocol/example-subgraph",
+  "license": "MIT",
+  "scripts": {
+    "build-contract": "solc contracts/Gravity.sol --abi -o abis --overwrite && solc contracts/Gravity.sol --bin -o bin --overwrite",
+    "create": "graph create example --node https://api.thegraph.com/deploy/",
+    "create-local": "graph create example --node http://127.0.0.1:8020",
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy example --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
+    "deploy-local": "graph deploy example --ipfs http://127.0.0.1:5001 --node http://127.0.0.1:8020"
+  },
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.30.2",
+    "@graphprotocol/graph-ts": "^0.27.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "truffle": "^5.0.4",
+    "truffle-contract": "^4.0.5",
+    "truffle-hdwallet-provider": "^1.0.4"
+>>>>>>> f64f0d0fcc4ab3db4b29218e8d1faa8aa047d6bc
+  }
+}
